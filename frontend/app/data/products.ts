@@ -12,7 +12,7 @@ export const products = [
     {
       title: "Bed Head Unit",
       description: "Modular headwall systems with integrated medical gas outlets.",
-      imageUrl: "/images/bed-head-unit.jpg",
+      imageUrl: "/images/bed-heat.png",
     },
     {
       title: "Medical Gas Outlet",
