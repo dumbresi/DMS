@@ -3,9 +3,22 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { notFound } from "next/navigation";
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
+// ✅ Metadata generator (optional)
+export async function generateMetadata({ params }: { params: { slug: string } }) {
   const product = products.find((p) => p.slug === params.slug);
+  return {
+    title: product?.title || "Product",
+    description: product?.description || "",
+  };
+}
 
+// ✅ Fix type error: explicitly define the shape of props
+export default function ProductPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const product = products.find((p) => p.slug === params.slug);
   if (!product) return notFound();
 
   return (
@@ -24,16 +37,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             </button>
           </div>
         </div>
-
         <div className="mt-12 border-t pt-6">
-          <div className="flex space-x-6 text-sm border-b pb-2">
-            <span className="text-blue-700 font-semibold border-b-2 border-blue-700">
-              Product Detail
-            </span>
-          </div>
-          <div className="mt-4 text-gray-600 text-sm">
-            <p>{product.details}</p>
-          </div>
+          <h2 className="text-blue-700 font-semibold text-lg mb-2">Product Detail</h2>
+          <p className="text-gray-600 text-sm">{product.details}</p>
         </div>
       </main>
       <Footer />
