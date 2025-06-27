@@ -1,43 +1,58 @@
 export const products = [
-    {
-      title: "Oxygen Generator",
-      description: "High-purity oxygen supply system for hospitals.",
-      imageUrl: "/images/oxygen-generator.png",
-    },
-    {
-      title: "Medical Gas Manifold",
-      description: "Automatic switching system for medical gas cylinders.",
-      imageUrl: "/images/medical-gas-manifold.jpg",
-    },
-    {
-      title: "Bed Head Unit",
-      description: "Modular headwall systems with integrated medical gas outlets.",
-      imageUrl: "/images/bed-heat.png",
-    },
-    {
-      title: "Medical Gas Outlet",
-      description: "Secure and easy-to-use gas outlets compatible with major systems.",
-      imageUrl: "/images/medical-gas-outlet.jpg",
-    },
-    {
-      title: "Medical Gas Alarm",
-      description: "Real-time gas flow and pressure monitoring system.",
-      imageUrl: "/images/medical-gas-alarm.jpg",
-    },
-    {
-      title: "Medical Vacuum System",
-      description: "Central vacuum unit for surgical and clinical use.",
-      imageUrl: "/images/medical-vacuum-system.jpg",
-    },
-    {
-      title: "Oxygen Therapy",
-      description: "Therapeutic oxygen systems for patient recovery.",
-      imageUrl: "/images/oxygen-therapy.jpg",
-    },
-    {
-      title: "Modular Operating Theater",
-      description: "Integrated OR solutions with high-efficiency airflow.",
-      imageUrl: "/images/modular-operating-theater.jpg",
-    },
-  ];
-  
+  {
+    slug: "oxygen-generator",
+    title: "Oxygen Generator",
+    description: "High-purity oxygen supply system for hospitals.",
+    details: "This generator produces medical-grade oxygen with built-in filters and control systems.",
+    imageUrl: "/images/oxygen-generator.png",
+  },
+  {
+    slug: "medical-gas-manifold",
+    title: "Medical Gas Manifold",
+    description: "Automatic switching system for medical gas cylinders.",
+    details: "The manifold automatically switches gas supply between primary and reserve cylinders, ensuring uninterrupted medical gas flow in hospitals and labs.",
+    imageUrl: "/images/medical-gas-manifold.jpg",
+  },
+  {
+    slug: "bed-head-unit",
+    title: "Bed Head Unit",
+    description: "Modular headwall systems with integrated medical gas outlets.",
+    details: "Wall-mounted units that combine gas outlets, electrical sockets, and nurse call buttons in a compact and modular format, ideal for patient care areas.",
+    imageUrl: "/images/bed-heat.png",
+  },
+  {
+    slug: "medical-gas-outlet",
+    title: "Medical Gas Outlet",
+    description: "Secure and easy-to-use gas outlets compatible with major systems.",
+    details: "Provides a safe and standardized interface for connecting medical gas equipment. Built with anti-leak safety features and compatible with all common plug types.",
+    imageUrl: "/images/medical-gas-outlet.jpg",
+  },
+  {
+    slug: "medical-gas-alarm",
+    title: "Medical Gas Alarm",
+    description: "Real-time gas flow and pressure monitoring system.",
+    details: "Monitors gas levels and triggers visual and audible alerts for abnormal pressure or flow conditions. Easily integrated with centralized monitoring panels.",
+    imageUrl: "/images/medical-gas-alarm.jpg",
+  },
+  {
+    slug: "medical-vacuum-system",
+    title: "Medical Vacuum System",
+    description: "Central vacuum unit for surgical and clinical use.",
+    details: "CE-certified vacuum system designed for reliability, low maintenance, and high suction efficiency in surgical environments. Available in horizontal and vertical tank mounts.",
+    imageUrl: "/images/medical-vacuum-system.jpg",
+  },
+  {
+    slug: "oxygen-therapy",
+    title: "Oxygen Therapy",
+    description: "Therapeutic oxygen systems for patient recovery.",
+    details: "Portable or fixed systems used to deliver oxygen to patients with respiratory issues. Includes flow regulators, humidifiers, and safety shutoff valves.",
+    imageUrl: "/images/oxygen-therapy.jpg",
+  },
+  {
+    slug: "modular-operating-theater",
+    title: "Modular Operating Theater",
+    description: "Integrated OR solutions with high-efficiency airflow.",
+    details: "Complete modular OR suites designed for infection control, ease of sterilization, and rapid deployment. Includes HEPA filters, integrated lighting, and equipment booms.",
+    imageUrl: "/images/modular-operating-theater.jpg",
+  },
+];
