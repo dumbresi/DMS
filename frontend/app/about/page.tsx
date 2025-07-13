@@ -1,23 +1,18 @@
 import React from 'react';
 import { about } from '../data/about';
 
-interface AboutProps {
-  title: string;
-  description: string[];
-  className?: string;
-  backgroundColor?: string;
-}
+// interface AboutProps {
+//   title: string;
+//   description: string[];
+//   className?: string;
+//   backgroundColor?: string;
+// }
 
-const About: React.FC<AboutProps> = ({ 
-  title, 
-  description, 
-  className = "py-16", 
-  backgroundColor = "bg-gray-50" 
-}) => {
-    title= about.title;
-    description=about.description
+export default   function About(){
+    const title= about.title;
+    const description=about.description
   return (
-    <section className={`${className} ${backgroundColor}`}>
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">
@@ -35,5 +30,3 @@ const About: React.FC<AboutProps> = ({
     </section>
   );
 };
-
-export default About;
