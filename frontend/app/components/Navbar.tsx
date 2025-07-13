@@ -10,7 +10,7 @@ export default function Navbar() {
         <nav className="space-x-6 text-sm font-medium text-gray-700">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/">Contact</Link>
         </nav>
       </div>
     </header>

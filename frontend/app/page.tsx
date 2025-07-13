@@ -3,12 +3,15 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import ProductCard from "@/app/components/ProductCard";
 import { products } from "@/app/data/products";
+import About from "./about/page";
+
+
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
+      <About title={""} description={[]}/>
       <main className="py-16 bg-gray-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
@@ -23,7 +26,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

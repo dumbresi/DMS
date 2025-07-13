@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 interface Props {
   title: string;
   description: string;
   imageUrl: string;
+  slug: string;
 }
 
-export default function ProductCard({ title, description, imageUrl }: Props) {
+export default function ProductCard({ title, description, imageUrl, slug }: Props) {
   return (
+    <Link href={`/product/${slug}`}>
     <div className="cursor-default bg-white rounded-xl shadow-sm overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-blue-500 border border-transparent">
       <img
         src={imageUrl}
@@ -21,5 +25,6 @@ export default function ProductCard({ title, description, imageUrl }: Props) {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
