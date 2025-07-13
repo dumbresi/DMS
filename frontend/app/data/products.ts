@@ -11,7 +11,7 @@ export const products = [
     title: "Medical Gas Manifold",
     description: "Automatic switching system for medical gas cylinders.",
     details: "The manifold automatically switches gas supply between primary and reserve cylinders, ensuring uninterrupted medical gas flow in hospitals and labs.",
-    imageUrl: "/images/medical-gas-manifold.jpg",
+    imageUrl: "/images/medical-gas-manifold.webp",
   },
   {
     slug: "bed-head-unit",
@@ -25,7 +25,7 @@ export const products = [
     title: "Medical Gas Outlet",
     description: "Secure and easy-to-use gas outlets compatible with major systems.",
     details: "Provides a safe and standardized interface for connecting medical gas equipment. Built with anti-leak safety features and compatible with all common plug types.",
-    imageUrl: "/images/medical-gas-outlet.jpg",
+    imageUrl: "/images/Medical-Gas-Outlet.webp",
   },
   {
     slug: "medical-gas-alarm",
@@ -39,7 +39,7 @@ export const products = [
     title: "Medical Vacuum System",
     description: "Central vacuum unit for surgical and clinical use.",
     details: "CE-certified vacuum system designed for reliability, low maintenance, and high suction efficiency in surgical environments. Available in horizontal and vertical tank mounts.",
-    imageUrl: "/images/medical-vacuum-system.jpg",
+    imageUrl: "/images/medical-vaccum-system.webp",
   },
   {
     slug: "oxygen-therapy",
@@ -53,6 +53,6 @@ export const products = [
     title: "Modular Operating Theater",
     description: "Integrated OR solutions with high-efficiency airflow.",
     details: "Complete modular OR suites designed for infection control, ease of sterilization, and rapid deployment. Includes HEPA filters, integrated lighting, and equipment booms.",
-    imageUrl: "/images/modular-operating-theater.jpg",
+    imageUrl: "/images/modular-operating-theatre.webp",
   },
 ];
