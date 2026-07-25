@@ -1,5 +1,6 @@
 /**
- * Edit company / contact details here — used across the site.
+ * Edit company / contact details here — used across the site and SEO.
+ * Keep in sync with `src/lib/seo.ts` when the public URL or address changes.
  */
 export const siteContact = {
   company: "Dhira Medical Services",

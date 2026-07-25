@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { getOrganizationJsonLd, siteSeo } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -77,28 +78,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dhira Medical Services — Healthcare Technology & Turnkey Solutions" },
-      {
-        name: "description",
-        content:
-          "Dhira Medical Services delivers medical equipment, biomedical engineering, hospital furniture, medical gas pipelines and turnkey healthcare solutions across India.",
-      },
-      { name: "author", content: "Dhira Medical Services" },
-      { property: "og:title", content: "Dhira Medical Services — Healthcare Excellence" },
-      {
-        property: "og:description",
-        content:
-          "Trusted provider of medical equipment, biomedical services and turnkey hospital solutions. 20+ years of healthcare technology expertise.",
-      },
+      { title: siteSeo.title },
+      { name: "description", content: siteSeo.description },
+      { name: "keywords", content: siteSeo.keywords },
+      { name: "author", content: siteSeo.siteName },
+      { name: "robots", content: "index, follow" },
+      { name: "googlebot", content: "index, follow" },
+      { name: "geo.region", content: "IN-MH" },
+      { name: "geo.placename", content: "Navi Mumbai" },
+      { name: "business:contact_data:locality", content: siteSeo.address.locality },
+      { name: "business:contact_data:region", content: siteSeo.address.region },
+      { name: "business:contact_data:country_name", content: siteSeo.address.countryName },
+      { property: "og:title", content: siteSeo.title },
+      { property: "og:description", content: siteSeo.description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: siteSeo.siteUrl },
+      { property: "og:site_name", content: siteSeo.siteName },
+      { property: "og:locale", content: siteSeo.locale },
+      { property: "og:image", content: siteSeo.ogImage },
+      { property: "og:image:alt", content: `${siteSeo.siteName} — biomedical and healthcare supply` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dhira Medical Services" },
-      {
-        name: "twitter:description",
-        content: "Healthcare technology, biomedical services and turnkey hospital solutions.",
-      },
+      { name: "twitter:title", content: siteSeo.title },
+      { name: "twitter:description", content: siteSeo.description },
+      { name: "twitter:image", content: siteSeo.ogImage },
     ],
     links: [
+      { rel: "canonical", href: siteSeo.siteUrl },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -106,6 +111,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(getOrganizationJsonLd()),
       },
     ],
   }),
