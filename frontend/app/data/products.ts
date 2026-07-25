@@ -42,13 +42,6 @@ export const products = [
     imageUrl: "/images/medical-vaccum-system.webp",
   },
   {
-    slug: "oxygen-therapy",
-    title: "Oxygen Therapy",
-    description: "Therapeutic oxygen systems for patient recovery.",
-    details: "Portable or fixed systems used to deliver oxygen to patients with respiratory issues. Includes flow regulators, humidifiers, and safety shutoff valves.",
-    imageUrl: "/images/oxygen-therapy.jpg",
-  },
-  {
     slug: "modular-operating-theater",
     title: "Modular Operating Theater",
     description: "Integrated OR solutions with high-efficiency airflow.",
