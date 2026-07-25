@@ -42,9 +42,6 @@ import heroImg from "@/assets/hero-healthcare.jpg";
 import vEquipment from "@/assets/vertical-equipment.jpg";
 import vBiomedical from "@/assets/vertical-biomedical.jpg";
 import vFurniture from "@/assets/vertical-furniture.png";
-import vOncology from "@/assets/vertical-oncology.png";
-import vGas from "@/assets/vertical-gas.jpg";
-import vConsumables from "@/assets/vertical-consumables.jpg";
 import { siteContact } from "@/lib/site-contact";
 
 export const Route = createFileRoute("/")({
@@ -497,19 +494,19 @@ const VERTICALS = [
     icon: Radiation,
     title: "Radiation Oncology",
     desc: "Linear accelerators, planning systems and turnkey bunkers.",
-    img: vOncology,
+    img: "/oncology.JPG",
   },
   {
     icon: Layers,
     title: "Medical Gas Pipeline",
     desc: "MGPS design, installation and NFPA/HTM-aligned commissioning.",
-    img: vGas,
+    img: "/gas_pipelines.JPG",
   },
   {
     icon: Package,
     title: "Medical Consumables",
     desc: "Reliable supply of everyday clinical and surgical consumables.",
-    img: vConsumables,
+    img: "/consumable.JPG",
   },
 ];
 
