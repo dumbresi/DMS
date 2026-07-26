@@ -40,7 +40,7 @@ export function getOrganizationJsonLd() {
         alternateName: "DMS",
         description: siteSeo.description,
         url: siteSeo.siteUrl,
-        logo: `${siteSeo.siteUrl}/favicon.ico`,
+        logo: `${siteSeo.siteUrl}/LogoDMS.JPG`,
         image: siteSeo.ogImage,
         email: siteContact.email,
         telephone: siteContact.phoneTel,
